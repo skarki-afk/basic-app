@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > This is an app which was made for mobile view only. So, please use mobile view for viewing this app. Otherwise, you might see some unordinary sizes as it has not been made for desktop view.
 
+### To run fake API
+
+> Go to terminal and run following code :
+
+```
+npx json-server --watch data/data.json --port 8000
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

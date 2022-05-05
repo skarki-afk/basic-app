@@ -26,7 +26,7 @@ const SearchSlider =({favorite,handleFavorite}:Props)=>{
                         </div>
                     </div>
                 </div>
-        </Link>
+            </Link>
         )
     })
     return(

@@ -12,11 +12,9 @@ type Product = {
 const useFetch =(url:string)=>{
     const [data, setData] = useState<Product[]>([])
     const [newData, setNewData] = useState<Product>({id: 1, description: "", title: "", price: 0, img:"" })
-    // const [id,setId] = useState<Number>()
-    // const [description,setDescription] = useState<String>("")
-    // const [title,setTitle] = useState<String>("")
-    // const [price,setPrice] = useState<Number>()
-    // const [img, setImg] = useState<String>("")
+    const [error, setError] = useState<string>("")
+    const [isPending, setIsPending] = useState<boolean>(true)
+    
     useEffect( () => {
         fetch(url)
           .then(res => {
@@ -28,13 +26,15 @@ const useFetch =(url:string)=>{
           .then(data=> {
             setData(data)
             setNewData(data)
+            setIsPending(false)
           })
           .catch(err => {
-            console.log(err.message)
+            setIsPending(false)
+            setError(err.message)
           })
     },
     [url])
-    return {data, newData};
+    return {data, newData, error, isPending};
 }
 
 export default useFetch
