@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Regarding this App
+
+> This is an app which was made for mobile view only. So, please use mobile view for viewing this app. Otherwise, you might see some unordinary sizes as it has not been made for desktop view.
+
 ## Available Scripts
 
 In the project directory, you can run:

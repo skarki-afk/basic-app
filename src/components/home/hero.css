@@ -1,0 +1,24 @@
+.slick-slider .slick-next{
+    transform: scale(0);
+  }
+  
+  .slick-slider .slick-prev{
+    transform: scale(0);
+  }
+  
+  .slick-slider{
+    position: relative;
+  }
+  
+  .slick-slider .slick-dots{
+    bottom: 135px;
+    z-index: 1;
+  }
+  
+  .slick-slider .slick-dots li button:before{
+    display: none;
+  }
+  
+  .slick-slider .slick-dots li.slick-active button:before{
+    color: white;
+  }
